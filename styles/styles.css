@@ -18,7 +18,7 @@ body {
 
 h1 {
     color: #f9faf8;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -28,13 +28,18 @@ ul {
     gap: 1rem;
 }
 
-li a {
+li a:any-link {
     color: #e5e7eb;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+li :is(a:hover, a:focus-visible) {
+    color: #98bdf9;
 }
 
 .hero-section {
+    min-height: 100dvh;
     background-color: #1f2937;
     display: flex;
     justify-content: space-between;
@@ -54,14 +59,14 @@ li a {
 
 .hero h2 {
     color: #f9faf8;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     margin-bottom: 1rem;
 }
 
 .hero p {
     color: #e5e5e5;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -72,14 +77,14 @@ button {
     border: none;
     padding: 0.6rem 2rem;
     border-radius: 0.5rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #3882f6;
+    background-color: hsl(217, 91%, 39%);
 }
 
 .about-section {
@@ -90,13 +95,14 @@ button:hover {
 
 .about-section h2 {
     color: #1f2937;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 900;
 }
 
 .profiles {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -106,7 +112,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 200px;
+    width: 12.5rem;
 }
 
 .profile-img {
@@ -131,7 +137,7 @@ button:hover {
 }
 
 .quote p {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: italic;
     font-weight: 300;
 }
@@ -139,7 +145,7 @@ button:hover {
 .quote cite {
     display: block;
     margin-top: 1rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: right;
 }
@@ -149,7 +155,7 @@ button:hover {
     color: #e5e5e5;
     background-color: #3b82f6;
     border-radius: 10px;
-    margin: 100px auto;
+    margin: 6.25rem auto;
     padding: 3rem 7rem;
     display: flex;
     justify-content: space-between;
@@ -157,18 +163,18 @@ button:hover {
 }
 
 .cta h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     margin-bottom: 0.5rem;
 }
 
 .cta p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .cta button {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 600;
     border: 2.5px solid #e5e5e5;
     cursor: pointer;
@@ -176,7 +182,7 @@ button:hover {
 
 footer {
     color: #e5e5e5;
-    font-size: 14px;
+    font-size: 0.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
